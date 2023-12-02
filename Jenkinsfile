@@ -12,7 +12,7 @@ pipeline {
 		DOCKER_CRED = credentials('docker')
 			API_KEY = credentials('api-key')
 			TAG = sh(script: 'date +%s', returnStdout: true).trim()
-			IMAGE = "inderharrysingh/ultimate:$TAG"
+			IMAGE = "teaguejobs/ultimate:$TAG"
 			SONAR_DIR = tool "sonar"
 		
 	}
